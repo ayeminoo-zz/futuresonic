@@ -1,0 +1,13 @@
+*FutureSonic* is a [http://www.madsonic.org/ Madsonic] and [http://www.subsonic.org/ SubSonic] fork.
+
+What advantages we are doing over other Subsonic forks:
+
+ # Stabilization in source code.
+ # Rewriting some areas.
+ # Translation to more languages.
+ # Engine bug fixing and optimization.
+ # Trial, License from code - removed!
+ # 100% Free Packages for Windows, Linux, MacOSX
+
+
+<g:plusone size="medium"></g:plusone>
