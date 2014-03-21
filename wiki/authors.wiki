@@ -1,0 +1,1 @@
+Madsonic is fork of Subsonic and FutureSonic is a fork of madsonic.
