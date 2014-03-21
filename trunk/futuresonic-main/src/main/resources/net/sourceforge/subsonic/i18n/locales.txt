@@ -4,6 +4,9 @@
 # English
 en
 
+# Lithuanian
+lt
+
 # English (United Kingdom)
 en_GB
 
