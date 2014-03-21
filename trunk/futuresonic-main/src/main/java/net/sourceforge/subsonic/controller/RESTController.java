@@ -2261,7 +2261,7 @@ public class RESTController extends MultiActionController {
 
         builder.preamble(StringUtil.ENCODING_UTF8);
         builder.add("subsonic-response", false,
-                new Attribute("xmlns", "http://futuresonic.org/restapi"),
+                new Attribute("xmlns", "http://sonic.lt/restapi"),
                 new Attribute("status", ok ? "ok" : "failed"),
                 new Attribute("version", StringUtil.getRESTProtocolVersion()));
         

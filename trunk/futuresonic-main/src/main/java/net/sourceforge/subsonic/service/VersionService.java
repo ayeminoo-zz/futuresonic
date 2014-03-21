@@ -71,7 +71,7 @@ public class VersionService {
     /**
      * URL from which to fetch latest versions.
      */
-    private static final String VERSION_URL = "http://futuresonic.org/version.html";
+    private static final String VERSION_URL = "http://futuresonic.googlecode.com/svn/version.html";
 
     /**
      * Returns the version number for the locally installed Subsonic version.

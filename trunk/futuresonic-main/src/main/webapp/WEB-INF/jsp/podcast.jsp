@@ -8,7 +8,7 @@
         <description>FutureSonic Podcast</description>
         <language>en-us</language>
         <image>
-            <url>http://futuresonic.org/images/ms.png</url>
+            <url>http://madsonic.org/images/ms.png</url>
             <title>FutureSonic Podcast</title>
         </image>
 
