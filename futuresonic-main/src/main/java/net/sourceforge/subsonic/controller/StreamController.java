@@ -200,10 +200,10 @@ public class StreamController implements Controller {
             if (isShoutCastRequested && !isSingleFile) {
                 response.setHeader("icy-metaint", "" + ShoutCastOutputStream.META_DATA_INTERVAL);
                 response.setHeader("icy-notice1", "This stream is served using FutureSonic");
-                response.setHeader("icy-notice2", "FutureSonic - Free media streamer - futuresonic.org");
+                response.setHeader("icy-notice2", "FutureSonic - Free media streamer - sonic.lt");
                 response.setHeader("icy-name", "FutureSonic");
                 response.setHeader("icy-genre", "Mixed");
-                response.setHeader("icy-url", "http://futuresonic.org/");
+                response.setHeader("icy-url", "http://sonic.lt/");
                 out = new ShoutCastOutputStream(out, player.getPlayQueue(), settingsService);
             }
 

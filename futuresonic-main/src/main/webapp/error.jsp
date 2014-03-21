@@ -17,7 +17,7 @@
 
 <p>
     FutureSonic encountered an internal error. You can report this error in the
-    <a href="http://forum.futuresonic.org" target="_blank">FutureSonic Forum</a>.
+    <a href="https://code.google.com/p/futuresonic/issues/list" target="_blank">FutureSonic Issue Tracker</a>.
     Please include the information below.
 </p>
 

@@ -120,7 +120,7 @@
     <div style="float:left;padding-right:1.5em">
         <h2 style="margin:0;">${empty model.share.description ? model.songs[0].albumName : model.share.username}</h2>
     </div>
-    <div class="detail" style="float:right">Streaming by <a href="http://futuresonic.org/" target="_blank"><b>FutureSonic</b></a></div>
+    <div class="detail" style="float:right">Streaming by <a href="http://sonic.lt/" target="_blank"><b>FutureSonic</b></a></div>
 
     <div style="clear:both;padding-top:1em">
 	<div id="wrapper" style="padding-top:1em">
