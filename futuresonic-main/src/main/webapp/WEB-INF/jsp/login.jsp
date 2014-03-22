@@ -82,6 +82,10 @@
 							<td></td>
 							<td align="left" class="detail"><a href="recover.view"><fmt:message key="login.recover"/></a></td>
 						</tr>
+						<tr>
+						<td></td>
+						<td align="left" class="detail"><a href="http://reg.sonic.lt"><fmt:message key="futuresonic.register"/></a></td>
+						</tr>
 						<c:if test="${model.logout}">
 							<tr><td colspan="2" style="padding-top:10px"><b><fmt:message key="login.logout"/></b></td></tr>
 						</c:if>
