@@ -198,7 +198,7 @@
 	<Td width='150'>
 		<div id="clearDiv" style="display:none;" class="forward"><a href="#" onclick="clearMessages(); return false;"> <fmt:message key="main.clearchat"/></a></div>
     </c:if>
-        <div id="clearDiv" class="forward"><a href="#" onclick="dwr.util.onReturn(event, addMessage)"> Refresh Chat </a>
+        <div id="clearDiv" class="forward"><a href="#" onclick="dwr.util.onReturn(event, addMessage)"> <fmt:message key="futuresonic.ChatRefresh"/> </a>
 	</td>
 	</Tr>
 	</div>

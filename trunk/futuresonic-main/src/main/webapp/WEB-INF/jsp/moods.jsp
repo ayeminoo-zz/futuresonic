@@ -92,14 +92,14 @@ function playMoodRadio() {
 
 <h1>
 	<img src="<spring:theme code="moodsImage"/>" alt="">
-	Moods
+	<fmt:message key="top.moods"/>
 </h1>
 <c:choose>
 	<c:when test="${empty model.moods}">
-		<p>Please scan your library before</a>.
+		<p><fmt:message key="fururesonic.moodspleasescan"/></a>.
 	</c:when>
 	<c:otherwise>
-		<p>Choose one or more moods.</p>
+		<p><fmt:message key="futuresonic.moodspleasescan2"/></p>
 <!--	<table>
 		<tr>
 		<td width="750"> -->
@@ -121,7 +121,7 @@ function playMoodRadio() {
 			<option>200</option>
 			</select>
 
-		<input type="button" value="Play Mood Radio!" onClick="playMoodRadio();">
+		<input type="button" value="<fmt:message key="futuresonic.moodplayradio"/>" onClick="playMoodRadio();">
 		</form>
 <!--	</td>
 		</tr>	
