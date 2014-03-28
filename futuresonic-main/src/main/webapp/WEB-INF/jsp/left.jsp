@@ -224,10 +224,10 @@
 	<a id="top"></a>
     </c:if>		
 	
-	<span id="showStatistics" style="display:inline"><div class="forward"><a href="javascript:noop()"onclick="showStatistic()">Show Statistics</a></div></span>
-	<span id="hideStatistics" style="display:none"><div class="forward"><a href="javascript:noop()"onclick="hideStatistic()">Hide Statistics</a></div></span>
+	<span id="showStatistics" style="display:inline"><div class="forward"><a href="javascript:noop()"onclick="showStatistic()"><fmt:message key="futuresonic.leftShowStatistics"/></a></div></span>
+	<span id="hideStatistics" style="display:none"><div class="forward"><a href="javascript:noop()"onclick="hideStatistic()"><fmt:message key="futuresonic.leftHideStatistics"/></a></div></span>
 
-	<span id="advancedStatistics" style="display:inline"><div class="forward"><a href="serverStatus.view?" target="main">Advanced Statistics</a></div></span>
+	<span id="advancedStatistics" style="display:inline"><div class="forward"><a href="serverStatus.view?" target="main"><fmt:message key="futuresonic.leftAdvancedStatistics"/></a></div></span>
 	                
 	<c:if test="${model.statistics.songCount gt 0}">
 	<div id="statistics" style="display:none;margin-top:10px;">
@@ -263,10 +263,10 @@
 	<c:if test="${not model.ShowShortcuts}">	
 		<c:if test="${not empty model.shortcuts}">	
 		<span id="showShortcuts" style="display:inline;">
-		<div class="forward" style="margin-top:10px;" ><a href="javascript:noop()"onclick="showShortcut()">Show Shortcuts</a></div></span>
+		<div class="forward" style="margin-top:10px;" ><a href="javascript:noop()"onclick="showShortcut()"><fmt:message key="futuresonic.leftShowShortcuts"/></a></div></span>
 
 		<span id="hideShortcuts" style="display:none;">
-		<div class="forward" style="margin-top:10px;" ><a href="javascript:noop()"onclick="hideShortcut()">Hide Shortcuts</a></div></span>
+		<div class="forward" style="margin-top:10px;" ><a href="javascript:noop()"onclick="hideShortcut()"><fmt:message key="futuresonic.leftHideShortcuts"/></a></div></span>
 		</c:if>
 		<div id="shortcuts" style="display:none;">
 

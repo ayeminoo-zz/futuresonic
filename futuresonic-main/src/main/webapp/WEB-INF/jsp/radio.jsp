@@ -96,10 +96,10 @@ function playGenreRadio() {
 </h1>
 <c:choose>
 	<c:when test="${empty model.genres}">
-		<p>Please scan your library before</a>.
+		<p><fmt:message key="fururesonic.moodspleasescan"/></a>.
 	</c:when>
 	<c:otherwise>
-		<p>Choose one or more genres.</p>
+		<p><fmt:message key="futuresonic.selectgenres"/></p>
 <!--	<table>
 		<tr>
 		<td width="750"> -->
@@ -121,7 +121,7 @@ function playGenreRadio() {
 			<option>200</option>
 			</select>
 
-		<input type="button" value="Play Genre Radio!" onClick="playGenreRadio();">
+		<input type="button" value="<fmt:message key="futuresonic.radioplaygenre"/>" onClick="playGenreRadio();">
 		</form>
 <!--	</td>
 		</tr>	

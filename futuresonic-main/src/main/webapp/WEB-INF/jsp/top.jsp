@@ -206,7 +206,7 @@
 			-->
 		<c:if test="${model.showIconPlaylists}">
 			<td style="min-width:4em;padding-right:0.8em">
-                <a href="loadPlaylist.view?" target="main"><img src="<spring:theme code="playlistImage"/>" title="${laylists}" alt="${playlists}"></a><br>
+                <a href="loadPlaylist.view?" target="main"><img src="<spring:theme code="playlistImage"/>" title="${playlists}" alt="${playlists}"></a><br>
                 <a href="loadPlaylist.view?" target="main">${playlists}</a>
             </td>
 		</c:if>
