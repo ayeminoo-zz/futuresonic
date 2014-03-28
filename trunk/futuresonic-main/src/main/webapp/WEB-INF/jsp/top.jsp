@@ -22,11 +22,22 @@
 <body class="bgcolor2 topframe" style="margin:0.4em 1em 0.4em 1em">
 
 <fmt:message key="top.home" var="home"/>
+<fmt:message key="top.artist" var="artist"/>
 <fmt:message key="top.now_playing" var="nowPlaying"/>
 <fmt:message key="top.starred" var="starred"/>
+<fmt:message key="top.genres" var="genres"/>
 <fmt:message key="top.discover" var="discover"/>
 <fmt:message key="top.settings" var="settings"/>
 <fmt:message key="top.status" var="status"/>
+<fmt:message key="top.radio" var="radio"/>
+<fmt:message key="top.moods" var="moods"/>
+<fmt:message key="top.history" var="history"/>
+<fmt:message key="top.statistics" var="statistics"/>
+<fmt:message key="top.playlists" var="playlists"/>
+<fmt:message key="top.editor" var="editor"/>
+<fmt:message key="top.db" var="db"/>
+<fmt:message key="top.logs" var="logs"/>
+<fmt:message key="top.upload" var="upload"/>
 <fmt:message key="top.podcast" var="podcast"/>
 <fmt:message key="top.more" var="more"/>
 <fmt:message key="top.chat" var="chat"/>
@@ -96,7 +107,7 @@
 	   <c:if test="${model.showIconArtist}">
            <td style="min-width:4em;padding-right:0.8em">
                 <a href="artist.view?" target="main"><img src="<spring:theme code="artistImage"/>" title="${artist}" alt="${artist}"></a><br>
-                <a href="artist.view?" target="main">Artist</a>
+                <a href="artist.view?" target="main">${artist}</a>
             </td>
 		</c:if>
 		<c:if test="${model.showIconPlaying}">
@@ -119,20 +130,20 @@
 		</c:if>
 		<c:if test="${model.showIconGenre}">
 			<td style="min-width:4em;padding-right:0.8em">
-				<a href="genres.view?" target="main"><img src="<spring:theme code="genresImage"/>" title="Genres" alt="Genres"></a><br>
-				<a href="genres.view?" target="main">Genres</a>
+				<a href="genres.view?" target="main"><img src="<spring:theme code="genresImage"/>" title="${genres}" alt="${genres}"></a><br>
+				<a href="genres.view?" target="main">${genres}</a>
 			</td>
 		</c:if>
 		<c:if test="${model.showIconMoods}">
 			<td style="min-width:4em;padding-right:0.8em">
-				<a href="moods.view?" target="main"><img src="<spring:theme code="moodsImage"/>" title="Moods" alt="Moods"></a><br>
-				<a href="moods.view?" target="main">Moods</a>
+				<a href="moods.view?" target="main"><img src="<spring:theme code="moodsImage"/>" title="${moods}" alt="${moods}"></a><br>
+				<a href="moods.view?" target="main">${moods}</a>
 			</td>
 		</c:if>
 		<c:if test="${model.showIconRadio}">
 			<td style="min-width:4em;padding-right:0.8em">
-				<a href="radio.view?" target="main"><img src="<spring:theme code="radioImage"/>" title="Radio" alt="Radio"></a><br>
-				<a href="radio.view?" target="main">Radio</a>
+				<a href="radio.view?" target="main"><img src="<spring:theme code="radioImage"/>" title="${radio}" alt="${radio}"></a><br>
+				<a href="radio.view?" target="main">${radio}</a>
 			</td>
 		</c:if>
 		<c:if test="${model.showIconPodcast}">
@@ -174,13 +185,13 @@
 		<c:if test="${model.showIconHistory}">
             <td style="min-width:4em;padding-right:0.8em">
                 <a href="history.view?" target="main"><img src="<spring:theme code="historyImage"/>" title="${history}" alt="${history}"></a><br>
-                <a href="history.view?" target="main">History</a>
+                <a href="history.view?" target="main">${history}</a>
             </td>
 		</c:if>
 		<c:if test="${model.showIconStatistics}">
 			<td style="min-width:4em;padding-right:0.8em">
-                <a href="statistics.view?" target="main"><img src="<spring:theme code="chartImage"/>" title="Stats" alt="Statistics"></a><br>
-                <a href="statistics.view?" target="main">Statistics</a>
+                <a href="statistics.view?" target="main"><img src="<spring:theme code="chartImage"/>" title="${statistics}" alt="${statistics}"></a><br>
+                <a href="statistics.view?" target="main">${statistics}</a>
             </td>
 		</c:if>
 			<!--
@@ -195,14 +206,14 @@
 			-->
 		<c:if test="${model.showIconPlaylists}">
 			<td style="min-width:4em;padding-right:0.8em">
-                <a href="loadPlaylist.view?" target="main"><img src="<spring:theme code="playlistImage"/>" title="Playlists" alt="Playlists"></a><br>
-                <a href="loadPlaylist.view?" target="main">Playlists</a>
+                <a href="loadPlaylist.view?" target="main"><img src="<spring:theme code="playlistImage"/>" title="${laylists}" alt="${playlists}"></a><br>
+                <a href="loadPlaylist.view?" target="main">${playlists}</a>
             </td>
 		</c:if>
 		<c:if test="${model.showIconPlaylistEditor}">
 			<td style="min-width:4em;padding-right:0.8em">
-                <a href="playlistEditor.view?" target="main"><img src="<spring:theme code="playlistEditImage"/>" title="Playlist Editor" alt="Playlist Editor"></a><br>
-                <a href="playlistEditor.view?" target="main">Editor</a>
+                <a href="playlistEditor.view?" target="main"><img src="<spring:theme code="playlistEditImage"/>" title="${editor}" alt="${editor}"></a><br>
+                <a href="playlistEditor.view?" target="main">${editor}</a>
             </td>
 		</c:if>
 		<c:if test="${model.showIconMore}">			
@@ -221,17 +232,17 @@
 		</c:if>
 		<c:if test="${model.user.adminRole}">
 			<td style="min-width:4em;padding-right:0.8em">
-				<a href="db.view?" target="_blank"><img src="<spring:theme code="dbImage"/>" title="DB" alt="Database"></a><br>
-				<a href="db.view?" target="_blank">DB</a>
+				<a href="db.view?" target="_blank"><img src="<spring:theme code="dbImage"/>" title="${db}" alt="${db}"></a><br>
+				<a href="db.view?" target="_blank">${db}</a>
 			</td>
 			<td style="min-width:4em;padding-right:0.8em">
-				<a href="log.view?" target="main"><img src="<spring:theme code="logsImage"/>" title="Logs" alt="Logfiles"></a><br>
-				<a href="log.view?" target="main">Logs</a>
+				<a href="log.view?" target="main"><img src="<spring:theme code="logsImage"/>" title="${logs}" alt="${logs}"></a><br>
+				<a href="log.view?" target="main">${logs}</a>
 			</td>
 		</c:if>
 		
 		<c:if test="${model.user.uploadRole}">
-			<td style="width:4em;padding-right:0.8em"> <A HREF="javascript:newwindow()" ><img src="<spring:theme code="loadImage_mini"/>" title="Upload"/>Upload</a></td>
+			<td style="width:4em;padding-right:0.8em"> <A HREF="javascript:newwindow()" ><img src="<spring:theme code="loadImage_mini"/>" title="${upload}"/>${upload}</a></td>
 		</c:if>
 
 		<td style="padding-left:5pt;text-align:center;">
