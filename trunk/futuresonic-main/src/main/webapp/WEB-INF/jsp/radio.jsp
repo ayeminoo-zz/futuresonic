@@ -92,7 +92,7 @@ function playGenreRadio() {
 
 <h1>
 	<img src="<spring:theme code="radioImage"/>" alt="">
-	Radio
+	<fmt:message key="futuresonic.radiotitle"/>
 </h1>
 <c:choose>
 	<c:when test="${empty model.genres}">

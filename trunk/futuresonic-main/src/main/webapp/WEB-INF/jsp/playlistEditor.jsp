@@ -104,15 +104,15 @@
 </head>
 
 <body class="mainframe bgcolor1" onload="init()">
-<h1>Edit playlist</h1>
+<h1><fmt:message key="futuresonic.editplaylist"/></h1>
     <table>
     <tr>
-        <th align="left" style="padding-top:1em">Name</th>
-        <th align="left" style="padding-top:1em">Comment</th>
-        <th align="left" style="padding-top:1em">Public</th>
+        <th align="left" style="padding-top:1em"><fmt:message key="futuresonic.playlistname"/></th>
+        <th align="left" style="padding-top:1em"><fmt:message key="futuresonic.playlistcomment"/></th>
+        <th align="left" style="padding-top:1em"><fmt:message key="futuresonic.playlistpublic"/></th>
     </tr>
     <tr class="dense">
-        <td><input type="text" id="playlistName" name="playlistName" value="Your Playlist" size="40"/></td>
+        <td><input type="text" id="playlistName" name="playlistName" value="<fmt:message key="futuresonic.playlistyour"/>" size="40"/></td>
         <td><input type="text" id="playlistComment" name="playlistComment" value="" size="40"/></td>
         <td align="center" style="padding-left:1em"><input id="isShared" name="isShared" type="checkbox" class="checkbox" checked/></td>
         <td/>
