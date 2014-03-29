@@ -123,6 +123,7 @@
 </head>
 
 <body class="mainframe bgcolor1" style="padding-bottom:0.5em" onload="init();">
+<img src="/icons/futuresonic_sunny/logo.png"/>
 <c:if test="${not model.popout}">
     <h1>${model.video.title}</h1>
 </c:if>
