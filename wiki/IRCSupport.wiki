@@ -2,4 +2,4 @@
 
 = Introduction =
 
-We have launched official support channel #FutureSonic on [irc://irc.freenode.org/futuresonic FreeNode] IRC Network. So please visit us and have a good time! :-)
+We have launched official support channel #FutureSonic on [irc://irc.freenode.net/futuresonic FreeNode] IRC Network. So please visit us and have a good time! :-)
