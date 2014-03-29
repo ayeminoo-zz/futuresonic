@@ -507,11 +507,11 @@
 
 		<!-- 03-07 -->
 		<table width="150px" border="0" cellspacing="0" cellpadding="1">
-		<tr><td class="detailcolor">albums</td> <td class="detailcolordark">${artist.albumCount}</td></tr>
-		<tr><td class="detailcolor">songs</td> <td class="detailcolordark">${artist.songCount}</td></tr>
-		<tr><td class="detailcolor">played</td> <td class="detailcolordark">${artist.playCount}</td></tr>
-		<tr><td class="detailcolor">year</td> <td class="detailcolordark">${artist.albums[0].year}</td></tr>
-		<tr><td class="detailcolor">genre</td> <td class="detailmini">${artist.albums[0].genre}</td></tr>
+		<tr><td class="detailcolor"><fmt:message key="futuresonic.albumalbums"/></td> <td class="detailcolordark">${artist.albumCount}</td></tr>
+		<tr><td class="detailcolor"><fmt:message key="futuresonic.albumsongs"/></td> <td class="detailcolordark">${artist.songCount}</td></tr>
+		<tr><td class="detailcolor"><fmt:message key="futuresonic.albumsplayed"/></td> <td class="detailcolordark">${artist.playCount}</td></tr>
+		<tr><td class="detailcolor"><fmt:message key="futuresonic.albumsyear"/></td> <td class="detailcolordark">${artist.albums[0].year}</td></tr>
+		<tr><td class="detailcolor"><fmt:message key="futuresonic.albumsgenre"/></td> <td class="detailmini">${artist.albums[0].genre}</td></tr>
 		<tr><td class="detailcolor" style="padding-top:6px"></td><td style="padding-top:6px"> 
 			<sub:url value="http://www.google.com/search" var="googleUrl" encoding="UTF-8">
                 <sub:param name="q" value="\"${artist.albums[0].artist}\""/>
@@ -534,29 +534,29 @@
             <sub:url value="http://www.youtube.com/results" var="YoutubeUrl" encoding="UTF-8">
                 <sub:param name="search_query" value="${artist.albums[0].artist}"/>
             </sub:url>
-            <a target="_blank" href="${googleUrl}"><img src="<spring:theme code="googleImage"/>" title="Search with Google"></a> 
-            <a target="_blank" href="${wikipediaUrl}"><img src="<spring:theme code="wikipediaImage"/>" title="Search with Wikipedia"></a> 
-            <a target="_blank" href="${discogsUrl}"><img src="<spring:theme code="discosgsImage"/>" title="Search with discosgs"></a>
-			<a target="_blank" href="${YoutubeUrl}"><img src="<spring:theme code="youtubeImage"/>" title="Search with youtube"></a>
-			<a target="_blank" href="${musicbrainzUrl}"><img src="<spring:theme code="musicbrainzImage"/>" title="Search with MusicBrainz"></a> 
-            <a target="_blank" href="${lastFmUrl}"><img src="<spring:theme code="lastfmImage"/>" title="Search with LastFM"></a> 
+            <a target="_blank" href="${googleUrl}"><img src="<spring:theme code="googleImage"/>" title="<fmt:message key="futuresonic.albumssearchwithgoogle"/>"></a> 
+            <a target="_blank" href="${wikipediaUrl}"><img src="<spring:theme code="wikipediaImage"/>" title="<fmt:message key="futuresonic.albumssearchwithwikipedia"/>"></a> 
+            <a target="_blank" href="${discogsUrl}"><img src="<spring:theme code="discosgsImage"/>" title="<fmt:message key="futuresonic.albumssearchwithdiscosgs"/>"></a>
+			<a target="_blank" href="${YoutubeUrl}"><img src="<spring:theme code="youtubeImage"/>" title="<fmt:message key="futuresonic.albumssearchwithyoutube"/>"></a>
+			<a target="_blank" href="${musicbrainzUrl}"><img src="<spring:theme code="musicbrainzImage"/>" title="<fmt:message key="futuresonic.albumssearchwithmusicbrainz"/>"></a> 
+            <a target="_blank" href="${lastFmUrl}"><img src="<spring:theme code="lastfmImage"/>" title="<fmt:message key="futuresonic.albumssearchwithlastfm"/>"></a> 
 
 				<c:choose>
 				  <c:when test="${model.showAlbum}">
 					<span id="showAlbums_${artist.albums[0].mediaFileId}" style="display:none">
 					<a href="javascript:noop()"onclick="showAlbums(${artist.albums[0].mediaFileId})">
-					<img src="<spring:theme code="albumsImage"/>" title="Show other albums from Artist"></a></span>
+					<img src="<spring:theme code="albumsImage"/>" title="<fmt:message key="futuresonic.albumsshowfromartist"/>"></a></span>
 					<span id="hideAlbums_${artist.albums[0].mediaFileId}" style="display:inline">
 					<a href="javascript:noop()" onclick="hideAlbums(${artist.albums[0].mediaFileId})">
-					<img src="<spring:theme code="albumsImage"/>" title="Hide albums"></a></span>
+					<img src="<spring:theme code="albumsImage"/>" title="<fmt:message key="futuresonic.albumshidealbums"/>"></a></span>
 				  </c:when>
 				  <c:otherwise>
 					<span id="showAlbums_${artist.albums[0].mediaFileId}" style="display:inline">
 					<a href="javascript:noop()"onclick="showAlbums(${artist.albums[0].mediaFileId})">
-					<img src="<spring:theme code="albumsImage"/>" title="Show other albums from Artist"></a></span>
+					<img src="<spring:theme code="albumsImage"/>" title="<fmt:message key="futuresonic.albumsshowfromartist"/>"></a></span>
 					<span id="hideAlbums_${artist.albums[0].mediaFileId}" style="display:none">
 					<a href="javascript:noop()" onclick="hideAlbums(${artist.albums[0].mediaFileId})">
-					<img src="<spring:theme code="albumsImage"/>" title="Hide albums"></a></span>
+					<img src="<spring:theme code="albumsImage"/>" title="<fmt:message key="futuresonic.albumshidealbums"/>"></a></span>
 				  </c:otherwise>
 				</c:choose>
 

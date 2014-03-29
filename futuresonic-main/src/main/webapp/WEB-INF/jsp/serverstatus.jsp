@@ -9,7 +9,7 @@
 
 <h1>
     <img src="<spring:theme code="statusImage"/>" alt="">
-	Server Status
+	<fmt:message key="futuresonic.serverstatustitile"/>
     <!-- <fmt:message key="status.title"/> -->
 </h1>
 
@@ -52,39 +52,39 @@
 		</sub:url>		
 		
 		<tr>
-		<td style="width:100px; border: 1px;">Albums</td>
+		<td style="width:100px; border: 1px;"><fmt:message key="futuresonic.serverstatusalbums"/></td>
 			<td style="border: 1px;" class="ruleTableCell" width="${model.chartWidth}"><img width="${model.chartWidth}" height="${model.chartHeight}" src="${chartUrl9}" alt=""></td>
 		</tr>
 		<tr>
-		<td>Audio Files</td>
+		<td><fmt:message key="futuresonic.serverstatusaudiofiles"/></td>
 			<td style="border: 1px;" class="ruleTableCell" width="${model.chartWidth}"><img width="${model.chartWidth}" height="${model.chartHeight}" src="${chartUrl1}" alt=""></td>
 		</tr>
 		<tr>
-		<td>Audio FileSize (MB)</td>
+		<td><fmt:message key="futuresonic.serverstatusaudiosizemb"/></td>
 			<td style="border: 1px;" class="ruleTableCell" width="${model.chartWidth}"><img width="${model.chartWidth}" height="${model.chartHeight}" src="${chartUrl2}" alt=""></td>
 		</tr>
 		<tr>
-		<td>Video Files</td>
+		<td><fmt:message key="futuresonic.serverstatusvideofiles"/></td>
 			<td style="border: 1px;" class="ruleTableCell" width="${model.chartWidth}"><img width="${model.chartWidth}" height="${model.chartHeight}" src="${chartUrl3}" alt=""></td>
 		</tr>
 		<tr>
-		<td>Video Filesize (MB)</td>
+		<td><fmt:message key="futuresonic.serverstatusvideofilesizemb"/></td>
 			<td style="border: 1px;" class="ruleTableCell" width="${model.chartWidth}"><img width="${model.chartWidth}" height="${model.chartHeight}" src="${chartUrl4}" alt=""></td>
 		</tr>
 		<tr>
-		<td>Podcasts</td>
+		<td><fmt:message key="futuresonic.serverstatuspocasts"/></td>
 			<td style="border: 1px;" class="ruleTableCell" width="${model.chartWidth}"><img width="${model.chartWidth}" height="${model.chartHeight}" src="${chartUrl5}" alt=""></td>
 		</tr>
 		<tr>
-		<td>Podcasts Filesize (MB)</td>
+		<td><fmt:message key="futuresonic.serverstatuspodcastssizemb"/></td>
 			<td style="border: 1px;" class="ruleTableCell" width="${model.chartWidth}"><img width="${model.chartWidth}" height="${model.chartHeight}" src="${chartUrl6}" alt=""></td>
 		</tr>
 		<tr>
-		<td>Audiobooks</td>
+		<td><fmt:message key="futuresonic.serverstatusaudiobooks"/></td>
 			<td style="border: 1px;" class="ruleTableCell" width="${model.chartWidth}"><img width="${model.chartWidth}" height="${model.chartHeight}" src="${chartUrl7}" alt=""></td>
 		</tr>
 		<tr>
-		<td>Audiobooks Filesize (MB)</td>
+		<td><fmt:message key="futuresonic.serverstatusaudiobooksfilesizemb"/></td>
 			<td style="border: 1px;" class="ruleTableCell" width="${model.chartWidth}"><img width="${model.chartWidth}" height="${model.chartHeight}" src="${chartUrl8}" alt=""></td>
 		</tr>
 		

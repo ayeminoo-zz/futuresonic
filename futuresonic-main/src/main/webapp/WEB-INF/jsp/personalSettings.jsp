@@ -277,10 +277,10 @@
     </p>
     	
 	<span id="showSettings" style="display:inline;">
-	<div class="forward" style="margin-top:10px;" ><a href="javascript:noop()"onclick="showShortcut()">Show Avatar Settings</a></div></span>
+	<div class="forward" style="margin-top:10px;" ><a href="javascript:noop()"onclick="showShortcut()"><fmt:message key="futuresonic.avatarshow"/></a></div></span>
 
 	<span id="hideSettings" style="display:none;">
-	<div class="forward" style="margin-top:10px;" ><a href="javascript:noop()"onclick="hideShortcut()">Hide Avatar Settings</a></div></span>
+	<div class="forward" style="margin-top:10px;" ><a href="javascript:noop()"onclick="hideShortcut()"><fmt:message key="futuresonic.avatarhide"/></a></div></span>
 	
 	<div id="avatarSettings" style="display:none;margin-top:5px;">
 
