@@ -1,7 +1,7 @@
 #!/bin/sh
 
 ###################################################################################
-# Shell script for starting FutureSonic.  See http://futuresonic.org.
+# Shell script for starting FutureSonic.  See http://futuresonic.googlecode.com.
 ###################################################################################
 
 MADSONIC_HOME=/var/futuresonic
